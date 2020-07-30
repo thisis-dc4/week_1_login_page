@@ -1,4 +1,4 @@
-# week_1_login_page
+# Week 1: Login Page
 
 A new Flutter project.
 

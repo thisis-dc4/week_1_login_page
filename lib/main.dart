@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:week_1_login_page/screens/login_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,12 +9,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Login Page'),
-        ),
-        body: Center(
-          child: Text('Login Page'),
-        ),
+        backgroundColor: Colors.orange[700],
+        body: LoginPage(),
       ),
     );
   }
