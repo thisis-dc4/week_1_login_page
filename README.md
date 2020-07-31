@@ -1,6 +1,8 @@
 # Week 1: Login Page
 
-A new Flutter project.
+My submission for Flutter UI Challenge Week 1.
+
+![Submission](Submission.png)
 
 ## Getting Started
 
