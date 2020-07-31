@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:week_1_login_page/global.dart';
 
 class FormWidget extends StatefulWidget {
@@ -13,7 +14,7 @@ class _FormWidgetState extends State<FormWidget> {
   Widget build(BuildContext context) {
     final _formKey = GlobalKey<FormState>();
     return Container(
-      margin: EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
+      margin: const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20.0),
         color: Colors.white,
@@ -22,7 +23,7 @@ class _FormWidgetState extends State<FormWidget> {
             color: orangeColor.withOpacity(0.2),
             blurRadius: 5.0,
             spreadRadius: 5.0,
-            offset: Offset(3.0, 4.0),
+            offset: const Offset(3.0, 4.0),
           ),
         ],
       ),
@@ -31,14 +32,14 @@ class _FormWidgetState extends State<FormWidget> {
         child: Column(
           children: <Widget>[
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 hintText: 'Email or Phone No.',
                 contentPadding: EdgeInsets.all(20.0),
               ),
             ),
             TextFormField(
               obscureText: true,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 hintText: 'Password',
                 fillColor: Colors.black,
                 border: InputBorder.none,

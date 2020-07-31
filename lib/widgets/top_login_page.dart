@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class TopLoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final _textTheme = Theme.of(context).textTheme;
+
     return Expanded(
       flex: 2,
       child: Padding(
@@ -13,19 +15,16 @@ class TopLoginPage extends StatelessWidget {
           children: <Widget>[
             Text(
               'Login',
-              style: Theme.of(context)
-                  .textTheme
-                  .headline3
-                  .copyWith(color: Colors.white),
+              style: _textTheme.headline3.copyWith(color: Colors.white),
             ),
             Container(
-              margin: EdgeInsets.only(top: 10.0),
+              margin: const EdgeInsets.only(top: 10.0),
               child: Text(
                 'Welcome Back',
-                style: Theme.of(context)
-                    .textTheme
-                    .bodyText2
-                    .copyWith(color: Colors.white, fontSize: 20.0),
+                style: _textTheme.headline6.copyWith(
+                  color: Colors.white,
+                  fontWeight: FontWeight.normal,
+                ),
               ),
             ),
           ],

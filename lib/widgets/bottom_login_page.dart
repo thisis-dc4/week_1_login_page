@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:week_1_login_page/global.dart';
 import 'package:week_1_login_page/widgets/form_widget.dart';
 
@@ -7,7 +8,7 @@ class BottomLoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final _width = MediaQuery.of(context).size.width;
     final _buttonWidth = _width * 0.35;
-    final _loginWidth = _width * 0.55;
+    final _loginButtonWidth = _width * 0.55;
 
     return Expanded(
       flex: 5,
@@ -15,8 +16,8 @@ class BottomLoginPage extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(50),
-            topRight: Radius.circular(50),
+            topLeft: const Radius.circular(50),
+            topRight: const Radius.circular(50),
           ),
           color: Colors.white,
         ),
@@ -27,22 +28,19 @@ class BottomLoginPage extends StatelessWidget {
             OutlineButton(
               onPressed: () {},
               borderSide: BorderSide.none,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(25.0)),
+              shape: loginButtonShape,
               child: Text('Forgot Password?'),
             ),
             Container(
-              width: _loginWidth,
+              width: _loginButtonWidth,
               height: 50.0,
               child: RaisedButton(
                 onPressed: () {},
                 color: orangeColor,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(25.0),
-                ),
+                shape: loginButtonShape,
                 child: Text(
                   'Login',
-                  style: TextStyle(color: Colors.white),
+                  style: const TextStyle(color: Colors.white),
                 ),
               ),
             ),
@@ -55,14 +53,10 @@ class BottomLoginPage extends StatelessWidget {
                   height: 50.0,
                   child: RaisedButton(
                     onPressed: () {},
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(25.0),
-                    ),
+                    shape: loginButtonShape,
                     child: Text(
                       'Facebook',
-                      style: TextStyle(
-                        color: Colors.white,
-                      ),
+                      style: const TextStyle(color: Colors.white),
                     ),
                     color: Colors.blue,
                   ),
@@ -72,12 +66,10 @@ class BottomLoginPage extends StatelessWidget {
                   height: 50.0,
                   child: RaisedButton(
                     onPressed: () {},
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(25.0),
-                    ),
+                    shape: loginButtonShape,
                     child: Text(
                       'Github',
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.white,
                       ),
                     ),
