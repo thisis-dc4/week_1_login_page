@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class TopLoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final _textTheme = Theme.of(context).textTheme;
+    final TextTheme _textTheme = Theme.of(context).textTheme;
 
     return Expanded(
       flex: 2,
