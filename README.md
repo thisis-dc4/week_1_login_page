@@ -2,7 +2,7 @@
 
 My submission for Flutter UI Challenge Week 1.
 
-![Submission](Submission.png)
+<img src="https://github.com/thisis-dc4/week_1_login_page/blob/master/Submission.png" width=50%>
 
 ## Getting Started
 
